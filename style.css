@@ -1,0 +1,221 @@
+body {
+    font-family: 'Redaction 35', sans-serif;
+    font-weight: normal;
+    padding: 0 0 0 0;
+    text-align: center;
+    height: 100vh;
+    width: 100vw;
+}
+h1 {
+    color: rgb(241, 233, 62);
+    font-size: 350%;
+    font-weight: normal;
+    font-feature-settings: "ss02", "ss08";
+    font-family: 'Blue Screen Personal Use';
+}
+h2, h3, h4, h5, h6 {
+    color: #ffffff;
+    text-align: center;
+    font-size: 100%;
+    font-weight: normal;
+    font-feature-settings: "ss02", "ss08";
+    font-family: 'Redaction 35', sans-serif;
+}
+.box {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #ffffff;
+    padding: 5px;
+    margin: 5px 0;
+}
+.welcome {
+    color: rgb(255, 255, 255);
+    text-align: center;
+    font-size: 100%;
+    font-weight: normal;
+    font-feature-settings: "ss02", "ss08";
+    font-family: 'Redaction 35', sans-serif;
+    top: 30px;
+}
+.instructions {
+    color: rgb(241, 233, 62);
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 100%;
+    font-weight: normal;
+    font-feature-settings: "ss02", "ss08";
+    font-family: 'Blue Screen Personal Use';
+    text-align: center;
+}
+.warning {
+    color: rgb(255, 0, 0);
+    font-size: 100%;
+    margin: 5px 5px;
+    font-weight: normal;
+    font-feature-settings: "ss02", "ss08";
+    font-family: 'Blue Screen Personal Use';
+    padding: 10px 20px;
+    text-align: center;
+    filter: drop-shadow(0 1px 3px);
+}
+footer {
+    text-align: center;
+    padding: 10px 0;
+    color: #ffffff;
+    position: relative;
+    bottom: 10px;
+    width: 100%;
+    font-weight: normal;
+    font-feature-settings: "ss02", "ss08";
+    font-family: 'Redaction 35', sans-serif;
+}
+p {
+    color: #ffffff;
+    text-align: justify;
+    font-size: 100%;
+    padding: 5px;
+    margin-left: 70px;
+    margin-right: 70px;
+}
+p1 {
+    color: rgb(255, 255, 255);
+    text-align: center;
+    font-size: 125%;
+    font-weight : normal;
+    font-feature-settings: "ss02", "ss08";
+    font-family: 'Redaction 35', sans-serif;
+    
+}
+.blurred-text {
+    color: rgb(241, 233, 62);
+    display: inline-block;
+    padding: 0px 5px 5px 5px;
+    font-weight : normal;
+    font-feature-settings: "ss02", "ss08";
+    font-family: 'Redaction 35', sans-serif;
+    width: 20vw;
+    text-align: left;
+    filter: blur(5px);
+    transition: filter 0.3s ease-in-out; /* Smooth transition over 0.3 seconds */
+}
+.blurred-text:hover {
+  filter: blur(0px); /* Unblur on hover */
+}
+.narrate {
+    color: rgb(255, 255, 255);
+    display: inline-block;
+    padding: 5px 5px 5px 5px;
+    font-weight : normal;
+    font-feature-settings: "ss02", "ss08";
+    font-family: 'Redaction 35', sans-serif;
+    width: 45%;
+    text-align: left;
+}
+.other {
+    color: rgb(241, 233, 62);
+    display: inline-block;
+    padding: 5px 5px 5px 5px;
+    font-weight : normal;
+    font-feature-settings: "ss02", "ss08";
+    font-family: 'Redaction 35', sans-serif;
+    width: 45%;
+    text-align: left;
+}
+.home {
+    font-family: 'Redaction 35', sans-serif;
+    font-weight: normal;
+    margin: 25px;
+    padding: 0 0 0 0;
+    text-align: center;
+    background-image: url("images/BACKGROUND.gif");
+    background-size: cover;
+    height: 100vh;
+}
+.silence {
+    font-family: 'Redaction 35', sans-serif;
+    font-weight: normal;
+    padding: 0 0 0 0;
+    background-image: url("images/BACKGROUND.png");
+    background-size: cover;
+    height: 200vh; /* To enable scrolling */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.begins {
+    font-family: 'Redaction 35', sans-serif;
+    font-weight: normal;
+    padding: 0 0 0 0;
+    background-image: url("images/SCENE_01.gif");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.page {
+    font-family: 'Redaction 35', sans-serif;
+    font-weight: normal;
+    padding: 0 0 0 0;
+    text-align: justify;
+    background-image: url("images/BACKGROUND.png");
+    background-size: cover;
+    background-repeat: repeat;
+    height: 100vh; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.container {
+    max-width: 960px;
+    max-height: 540px;
+}
+
+.reveal {
+    margin-bottom: 3rem;
+    font-size: clamp(20px, 2vw, 70px);
+    text-align: left;
+}
+nav {
+    margin: 20px 0;
+}
+a {
+    color: #7aebff;
+    text-decoration: none;
+    margin: 0 10px;
+}
+a:hover {
+    text-decoration: underline;
+}
+
+.fade-in-active {
+        opacity: 0; /* Initially hidden */
+        transition: opacity 2s ease-in-out; /* Fade in over 2 seconds */
+    }
+
+    /* This class will be added by JavaScript */
+    .fade-in-active {
+        opacity: 1;
+    }
+
+/*font faces*/
+@font-face {
+    font-family: 'Blue Screen Personal Use';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Blue Screen Personal Use'), url('https://fonts.cdnfonts.com/s/63153/BlueScreenPersonalUseRegular-0W1M9.woff') format('woff');
+}
+/* redaction-35-latin-400-normal */
+@font-face {
+  font-family: 'Redaction 35';
+  font-style: normal;
+  font-display: swap;
+  font-weight: 400;
+  src: url(https://cdn.jsdelivr.net/fontsource/fonts/redaction-35@latest/latin-400-normal.woff2) format('woff2'), url(https://cdn.jsdelivr.net/fontsource/fonts/redaction-35@latest/latin-400-normal.woff) format('woff');
+}
+@import url('https://fonts.cdnfonts.com/css/blue-screen-personal-use');
+@import url("https://assets.soracom.io/fonts/aeonik/Aeonik.css");
+@import url("https://assets.soracom.io/fonts/source-han-sans/SourceHanSansJP-VF.css");
